@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio | Gallery</title>
+
+    <!-- CSS -->
+     <style>
+        /* Reset */
+        .content {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            padding: 5px 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        header h1 {
+            color: black;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        /* Grid Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            text-align: center;
+        }
+
+        .image-placeholder {
+            width: auto;
+            height: auto;
+            margin: auto;
+        }
+
+        .image-placeholder img {
+            width: 50%;
+        }
+
+        #p-id {
+            text-align: justify;
+        }
+        .gallery-table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        .gallery-table td {
+            padding: 15px;
+        }
+        
+        .gallery-table img {
+            width: 250px;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 5px;
+        } 
+     </style>
+</head>
+<body>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 5px">
+            <li><a href="index.html" style="text-decoration: none; color: black;">Home |</a> </li>
+            <li><a href="gallery.html" style="text-decoration: none; color: black;">Gallery |</a> </li>
+            <li><a href="contact.html" style="text-decoration: none; color: black;">Contact</a> </li>
+        </ul>
+    </nav>
+    <hr/>
+
+    <div class="content">
+        <header>
+            <h1 style="text-align: center;">Gallery of President</h1>
+        </header>
+    
+        
+        <!-- Gallery Section -->
+        <!-- <section class="gallery-container">
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_1.jpg" alt=""></div>
+                    <h3 id="tagname">Presiden RI 1</h3> 
+                    <p id="p-id">Ir.Soekarno biasa dipanggil dengan sebutan Bung Karno adalah seorang negarawan, 
+                    <br>orator, dan Presiden Indonesia pertama yang menjabat sejak tahun 1945 sampai 1967.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_2.jpg" alt=""></div>
+                    <h3 id="tagname">Presiden RI 2</h3> 
+                    <p id="p-id">Soeharto, Presiden Indonesia kedua yang menjabat sejak tahun 1968 sampai 1998. 
+                    <br>Sebelumnya ia pernah menjabat sebagai penjabat presiden sebelum akhirnya diangkat menjadi presiden. 
+                    <br>Secara luas ia dianggap sebagai diktator militer oleh pengamat internasional.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_3.jpg" alt=""></div><br>
+                    <h3 id="tagname">Presiden RI 3</h3> 
+                    <p id="p-id">Bacharuddin Jusuf Habibie, adalah Presiden Indonesia ketiga yang menjabat sejak tahun 1998 sampai 1999, 
+                    <br>menggantikan Soeharto yang mengundurkan diri dari jabatan presiden pada tanggal 21 Mei 1998. 
+                    <br>Sebelumnya, ia menjabat sebagai Wakil Presiden Indonesia ketujuh.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_4.jpg" alt=""></div>
+                    <h3 id="tagname">Presiden RI 4</h3> 
+                    <p id="p-id">Abdurrahman Wahid (dilahirkan dengan nama Abdurrahman ad-Dakhil;[1] 7 September 1940 – 30 Desember 2009), 
+                    <br>lebih dikenal dengan nama Gus Dur adalah politikus Indonesia dan pemimpin agama Islam yang menjabat sebagai 
+                    <br>presiden Indonesia keempat sejak tahun 1999 hingga 2001.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_5.jpg" alt=""></div><br>
+                    <h3 id="tagname" style="padding-top: 10px;">Presiden RI 5</h3> 
+                    <p id="p-id">Diah Permata Megawati Setiawati Soekarnoputri (lahir 23 Januari 1947) adalah Presiden Indonesia kelima yang menjabat dari tahun 2001 sampai 2004, 
+                    <br>menggantikan Abdurrahman Wahid yang dicopot dari jabatannya.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_6.jpg" alt=""></div><br>
+                    <h3 id="tagname" style="padding-top: 10px;">Presiden RI 6</h3> 
+                    <p id="p-id">Susilo Bambang Yudhoyono (lahir 9 September 1949), atau lebih dikenal dengan inisialnya SBY, adalah Presiden Indonesia keenam 
+                    <br>yang menjabat sejak tahun 2004 sampai 2014. Ia merupakan Presiden pertama di era Reformasi yang terpilih melalui Pemilihan Umum secara langsung.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_777.jpg" alt=""></div><br>
+                    <h3 id="tagname" style="padding-top: 10px;">Presiden RI 7</h3> 
+                    <p id="p-id">Joko Widodo (Indonesia: [dʒɔkɔ widɔdɔ]; lahir 21 Juni 1961), lebih dikenal sebagai Jokowi adalah politikus dan pengusaha Indonesia yang menjabat 
+                    <br>sebagai Presiden Indonesia ketujuh dari tahun 2014 sampai 2024.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder"><img src="img/RI_8.jpg" alt=""></div>
+                    <h3 id="tagname" style="padding-top: 10px;">Presiden RI 8</h3> 
+                    <p id="p-id">Prabowo Subianto Djojohadikusumo (EYD V: Prabowo Subianto Joyohadikusumo; lahir 17 Oktober 1951) adalah politikus, pengusaha dan purnawirawan 
+                    <br>Tentara Nasional Indonesia Angkatan Darat yang menjabat sebagai Presiden Indonesia sejak 20 Oktober 2024 untuk masa periode 2024—2029.</p>
+                </div>
+                
+            </div>
+        </section> -->
+        <table class="gallery-table">
+            <tr>
+                <td>
+                    <img src="img/RI_1.jpg" alt="Gambar 1">
+                    <p style="font-weight: bold;">Presiden RI 1 (1945 - 1967)</p>
+                    <p>Ir.Soekarno</p>
+                </td>
+                <td>
+                    <img src="img/RI_2.jpg" alt="Gambar 2">
+                    <p style="font-weight: bold;">Presiden RI 2 (1968 - 1998)</p>
+                    <p>Soeharto</p>
+                </td>
+                <td>
+                    <img src="img/RI_3.jpg" alt="Gambar 3">
+                    <p style="font-weight: bold;">Presiden RI 3 (1998 - 1999)</p>
+                    <p>Bacharuddin Jusuf Habibie</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/RI_4.jpg" alt="Gambar 4">
+                    <p style="font-weight: bold;">Presiden RI 4 (1999 - 2001)</p>
+                    <p>Abdurrahman Wahid</p>
+                </td>
+                <td>
+                    <img src="img/RI_5.jpg" alt="Gambar 5">
+                    <p style="font-weight: bold;">Presiden RI 5 (2001 - 2004)</p>
+                    <p>Diah Permata Megawati Setiawati Soekarnoputri</p>
+                </td>
+                <td>
+                    <img src="img/RI_6.jpg" alt="Gambar 6">
+                    <p style="font-weight: bold;">Presiden RI 6 (2004 - 2014)</p>
+                    <p>Susilo Bambang Yudhoyono</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/RI_777.jpg" alt="Gambar 7">
+                    <p style="font-weight: bold;">Presiden RI 7 (2014 - 2024)</p>
+                    <p>Joko Widodo</p>
+                </td>
+                <td>
+                    <img src="img/RI_8.jpg" alt="Gambar 8">
+                    <p style="font-weight: bold;">Presiden RI 8 (2024 - Sekarang)</p>
+                    <p>Prabowo Subianto Djojohadikusumo</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer style="position: inline-block; left: 0; bottom: 0; width: 100%; text-align: center;">
+        <hr>
+        <p>Copyright <sup>&copy;</sup> 2025 <span style="font-weight: bold;">FAW.ID.</span> </p>
+    </footer>
+</body>
+</html>

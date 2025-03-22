@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Contact</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            padding: 5px 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .contact-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .side-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: gray;
+            font-size: 12px;
+            margin-right: 10px;
+            position: relative;
+        }
+        
+        .side-text .line {
+            width: 30px;
+            height: 1px;
+            background: gray;
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-right: 10px;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            margin: 8px 0;
+            font-weight: bold;
+        }
+        
+        .contact-links img {
+            width: 30px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 5px">
+            <li><a href="index.html" style="text-decoration: none; color: black;">Home |</a> </li>
+            <li><a href="gallery.html" style="text-decoration: none; color: black;">Gallery |</a> </li>
+            <li><a href="contact.html" style="text-decoration: none; color: black;">Contact</a> </li>
+        </ul>
+    </nav>
+
+    <hr/>
+
+    <header style="text-align: center; margin-top: 50px;">
+        <img src="img/userpoto_7.png" width="200" style="border-radius: 50%;"/>
+        <h1>Fahry Achmad Wibowo</h1>
+        <p style="margin-left: 200px; margin-right: 200px;">Saya Fahry Achmad Wibowo, Panggil aja Ry umur saya sekarang Kepala 2 + 0. 
+        <br>Saya berasal dari Tangerang.</p>
+    </header>
+
+    <div class="contact-section">
+        <div class="side-text">
+            <div class="line"></div>
+        </div>
+        <div class="contact-links">
+            <a href="https://api.whatsapp.com/send?phone=6285156714674" class="contact-item"><img src="img/whatsapp.png" alt="" >Whatsapp</a><br>
+            <a href="mailto:fahryachmad06@gmail.com" class="contact-item"><img src="img/email.png" alt="" >Email</a><br>
+            <a href="https://insatgram/nux_88" class="contact-item"><img src="img/instagram.png" alt="" >Instagram</a> <br>
+        </div>
+    </div>
+
+    <footer style="position: inline-block; left: 0; bottom: 0; width: 100%; text-align: center;">
+        <hr>
+        <p>Copyright <sup>&copy;</sup> 2025 <span style="font-weight: bold;">FAW.ID.</span> </p>
+    </footer>
+</body>
+</html>
